@@ -1,0 +1,36 @@
+﻿@model PoliceApp.WEB.Models.Station
+
+@{
+    ViewData["Title"] = "StationDetails";
+}
+
+<h2>Datasheet of one station</h2>
+
+@Html.ActionLink("Back to the list", "Index");
+
+<table border="1">
+    <tr>
+        <td>@Html.DisplayNameFor(m => m.StationId)</td>
+        <td>@Html.DisplayFor(m => m.StationId)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(m => m.StationName)</td>
+        <td>@Html.DisplayFor(m => m.StationName)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(m => m.StationCity)</td>
+        <td>@Html.DisplayFor(m => m.StationCity)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(m => m.StationPhone)</td>
+        <td>@Html.DisplayFor(m => m.StationPhone)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(m => m.StationAddress)</td>
+        <td>@Html.DisplayFor(m => m.StationAddress)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(m => m.StationPostCode)</td>
+        <td>@Html.DisplayFor(m => m.StationPostCode)</td>
+    </tr>
+</table>

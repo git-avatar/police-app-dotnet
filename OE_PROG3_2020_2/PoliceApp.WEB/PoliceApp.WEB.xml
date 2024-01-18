@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PoliceApp.WEB</name>
+    </assembly>
+    <members>
+        <member name="T:PoliceApp.WEB.Controllers.HomeController">
+            <summary>
+            HomeController class.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.WEB.Controllers.HomeController.#ctor(Microsoft.Extensions.Logging.ILogger{PoliceApp.WEB.Controllers.HomeController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:PoliceApp.WEB.Controllers.HomeController"/> class.
+            HomeController constructor.
+            </summary>
+            <param name="logger">ILogger parameter.</param>
+        </member>
+        <member name="M:PoliceApp.WEB.Controllers.HomeController.Index">
+            <summary>
+            Index method that returns the view.
+            </summary>
+            <returns>IActionResult instance.</returns>
+        </member>
+        <member name="M:PoliceApp.WEB.Controllers.HomeController.Privacy">
+            <summary>
+            Privacy method that returns the view.
+            </summary>
+            <returns>IActionResult instance.</returns>
+        </member>
+        <member name="M:PoliceApp.WEB.Controllers.HomeController.Error">
+            <summary>
+            Error method that returns the a ErrorViewModel.
+            </summary>
+            <returns>IActionResult instance.</returns>
+        </member>
+        <member name="T:PoliceApp.WEB.Controllers.StationsController">
+            <summary>
+            StationController class.
+            </summary>
+        </member>
+        <member name="F:PoliceApp.WEB.Controllers.StationsController.logic">
+            <summary>
+            IPoliceLogic instance.
+            </summary>
+        </member>
+        <member name="F:PoliceApp.WEB.Controllers.StationsController.mapper">
+            <summary>
+            IMapper instance.
+            </summary>
+        </member>
+        <member name="F:PoliceApp.WEB.Controllers.StationsController.vm">
+            <summary>
+            StationListViewModel instance.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.WEB.Controllers.StationsController.#ctor(PoliceApp.Logic.ILogics.IPoliceChiefLogic,AutoMapper.IMapper)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PoliceApp.WEB.Controllers.StationsController"/> class.
+            StationController constructor that incializes all the necessary variables.
+            </summary>
+            <param name="logic">IPoliceChiefLogic instance.</param>
+            <param name="mapper">IMapper instance.</param>
+        </member>
+        <member name="M:PoliceApp.WEB.Controllers.StationsController.Index">
+            <summary>
+            Index method used to show the main webpage.
+            </summary>
+            <returns>IActionResult instance.</returns>
+        </member>
+        <member name="M:PoliceApp.WEB.Controllers.StationsController.Details(System.Int32)">
+            <summary>
+            Details method that shows the chosen station details.
+            </summary>
+            <param name="id">The id of the chosen station.</param>
+            <returns>IActionResult instance.</returns>
+        </member>
+        <member name="M:PoliceApp.WEB.Controllers.StationsController.Remove(System.Int32)">
+            <summary>
+            Remove method that removes the chosen station.
+            </summary>
+            <param name="id">The id of the chosen station.</param>
+            <returns>IActionResult instance.</returns>
+        </member>
+        <member name="M:PoliceApp.WEB.Controllers.StationsController.Edit(System.Int32)">
+            <summary>
+            Edit method used to edit a chosen station.
+            </summary>
+            <param name="id">Id of the chosen station.</param>
+            <returns>IActionResult instance.</returns>
+        </member>
+        <member name="M:PoliceApp.WEB.Controllers.StationsController.Edit(PoliceApp.WEB.Models.Station,System.String)">
+            <summary>
+            Edit method used to implement the edition of a chosen station.
+            </summary>
+            <param name="station">The chosen station model.</param>
+            <param name="editAction">The chosen operation of the editAction.</param>
+            <returns>IActionResult instance.</returns>
+        </member>
+        <member name="T:PoliceApp.WEB.Models.ErrorViewModel">
+            <summary>
+            ErrorViewModel class.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.WEB.Models.ErrorViewModel.RequestId">
+            <summary>
+            Gets or sets requestId property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.WEB.Models.ErrorViewModel.ShowRequestId">
+            <summary>
+            Gets a value indicating whether showRequestId method.
+            </summary>
+        </member>
+        <member name="T:PoliceApp.WEB.Models.MapperFactory">
+            <summary>
+            MapperFactory class.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.WEB.Models.MapperFactory.CreateMapper">
+            <summary>
+            CreateMapper method that is responsible for converting the Data.data into Model.data.
+            </summary>
+            <returns>IMapper instance to do the conversion.</returns>
+        </member>
+        <member name="T:PoliceApp.WEB.Models.Station">
+            <summary>
+            Station model class.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.WEB.Models.Station.StationId">
+            <summary>
+            Gets or sets stationId property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.WEB.Models.Station.StationName">
+            <summary>
+            Gets or sets stationName property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.WEB.Models.Station.StationCity">
+            <summary>
+            Gets or sets stationCity property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.WEB.Models.Station.StationPhone">
+            <summary>
+            Gets or sets stationPhone property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.WEB.Models.Station.StationAddress">
+            <summary>
+            Gets or sets stationAddress property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.WEB.Models.Station.StationPostCode">
+            <summary>
+            Gets or sets stationPostCode property.
+            </summary>
+        </member>
+        <member name="T:PoliceApp.WEB.Models.StationListViewModel">
+            <summary>
+            StationListViewModel class.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.WEB.Models.StationListViewModel.EditedStation">
+            <summary>
+            Gets or sets editedStation property, used for editing a desired station.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.WEB.Models.StationListViewModel.ListOfStations">
+            <summary>
+            Gets or sets listOfStations property, used for listing out the list of stations.
+            </summary>
+        </member>
+        <member name="T:PoliceApp.WEB.Prog">
+            <summary>
+            Program class.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.WEB.Prog.Main(System.String[])">
+            <summary>
+            Main method which creates the HostBuilder.
+            </summary>
+            <param name="args">Args parameter.</param>
+        </member>
+        <member name="M:PoliceApp.WEB.Prog.CreateHostBuilder(System.String[])">
+            <summary>
+            CreatheHostBuilder method which creates the HostBuilder.
+            </summary>
+            <param name="args">Arg parameter.</param>
+            <returns>IHostBuilder instance.</returns>
+        </member>
+        <member name="T:PoliceApp.WEB.Startup">
+            <summary>
+            Startup class.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.WEB.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PoliceApp.WEB.Startup"/> class.
+            </summary>
+            <param name="configuration">IConfiguration parameter.</param>
+        </member>
+        <member name="P:PoliceApp.WEB.Startup.Configuration">
+            <summary>
+            Gets configuration property.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.WEB.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureServices method that uses AutoMapper to creathe the map and the PoliceChiefLogic.
+            </summary>
+            <param name="services">IServiceCollection parameter.</param>
+        </member>
+        <member name="M:PoliceApp.WEB.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure method.
+            </summary>
+            <param name="app">IApplicationBuilder parameter.</param>
+            <param name="env">IWebHostEnviorment parameter.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PoliceApp.Logic</name>
+    </assembly>
+    <members>
+        <member name="T:PoliceApp.Logic.Logic_s.StationLogic">
+            <summary>
+            StationLogic class.
+            </summary>
+        </member>
+        <member name="F:PoliceApp.Logic.Logic_s.StationLogic.stationRepository">
+            <summary>
+            IStationRepository.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Logic.Logic_s.StationLogic.#ctor(PoliceApp.Repository.IStationRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PoliceApp.Logic.Logic_s.StationLogic"/> class.
+            </summary>
+            <param name="stationRepository">IStationRepositroy interface to be assigned.</param>
+        </member>
+        <member name="M:PoliceApp.Logic.Logic_s.StationLogic.Add(PoliceApp.Data.Station)">
+            <summary>
+            Implements the Add method.
+            </summary>
+            <param name="entity">Station object.</param>
+        </member>
+        <member name="M:PoliceApp.Logic.Logic_s.StationLogic.AddRange(System.Collections.Generic.IQueryable{PoliceApp.Data.Station})">
+            <summary>
+            Implements the AddRange method.
+            </summary>
+            <param name="entities">IQueryable list of Station objects.</param>
+        </member>
+        <member name="M:PoliceApp.Logic.Logic_s.StationLogic.Find(System.Linq.Expressions.Expression{System.Func{PoliceApp.Data.Station,System.Boolean}})">
+            <summary>
+            Implements the Find method.
+            </summary>
+            <param name="predicate">Function or lambda expression.</param>
+            <returns>IQueryable list of Satation objects.</returns>
+        </member>
+        <member name="M:PoliceApp.Logic.Logic_s.StationLogic.Get(System.Int32)">
+            <summary>
+            Implements the Get method.
+            </summary>
+            <param name="id">Id of the desired element.</param>
+            <returns>Station object.</returns>
+        </member>
+        <member name="M:PoliceApp.Logic.Logic_s.StationLogic.GetAll">
+            <summary>
+            Implements the GetAll method.
+            </summary>
+            <returns>IQueryable list of Station objects.</returns>
+        </member>
+        <member name="M:PoliceApp.Logic.Logic_s.StationLogic.Remove(PoliceApp.Data.Station)">
+            <summary>
+            Implements the Remove method.
+            </summary>
+            <param name="entity">Station object to be removed.</param>
+        </member>
+        <member name="M:PoliceApp.Logic.Logic_s.StationLogic.Remove(System.Int32)">
+            <summary>
+            Implements the Remove method(Id).
+            </summary>
+            <param name="id">Id of the entity we want to remove.</param>
+        </member>
+        <member name="M:PoliceApp.Logic.Logic_s.StationLogic.RemoveRange(System.Collections.Generic.IQueryable{PoliceApp.Data.Station})">
+            <summary>
+            Implements the RemoveRange method.
+            </summary>
+            <param name="entities">IQueryable list of Station objects.</param>
+        </member>
+        <member name="M:PoliceApp.Logic.Logic_s.StationLogic.UpdateName(System.Int32,System.String)">
+            <summary>
+            Implementst the Update method.
+            </summary>
+            <param name="id">Id of the desired element.</param>
+            <param name="newName">Name of the NewName.</param>
+        </member>
+    </members>
+</doc>

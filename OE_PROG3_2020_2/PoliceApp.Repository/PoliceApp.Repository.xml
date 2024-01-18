@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PoliceApp.Repository</name>
+    </assembly>
+    <members>
+        <member name="T:PoliceApp.Repository.ICrimeRepository">
+            <summary>
+            Repositroy to deal with the update method.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Repository.ICrimeRepository.UpdateType(System.Int32,System.String)">
+            <summary>
+            Makes an update method.
+            </summary>
+            <param name="id">Id of the record we want to update.</param>
+            <param name="newType">Name of the Updated city.</param>
+        </member>
+        <member name="T:PoliceApp.Repository.ICriminalRepository">
+            <summary>
+            Repositroy to deal with the update method.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Repository.ICriminalRepository.UpdateName(System.Int32,System.String)">
+            <summary>
+             Makes an update method.
+            </summary>
+            <param name="id">Id of the record we want to update.</param>
+            <param name="newName">>Name of the Updated city.</param>
+        </member>
+        <member name="T:PoliceApp.Repository.IPoliceRepository">
+            <summary>
+            Repositroy to deal with the update method.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Repository.IPoliceRepository.UpdateCity(System.Int32,System.String)">
+            <summary>
+            Makes an update method.
+            </summary>
+            <param name="id">Id of the record we want to update.</param>
+            <param name="newCity">Name of the Updated city.</param>
+        </member>
+        <member name="T:PoliceApp.Repository.IStationRepository">
+            <summary>
+            Repositroy to deal with the update method.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Repository.IStationRepository.UpdateName(System.Int32,System.String)">
+            <summary>
+             Makes an update method.
+            </summary>
+            <param name="id">Id of the record we want to update.</param>
+            <param name="newName">Name of the Updated city.</param>
+        </member>
+        <member name="T:PoliceApp.Repository.IRepository`1">
+            <summary>
+            Create interface IRepositroy which takes a TEntity parameter.
+            </summary>
+            <typeparam name="TEntity">Generic paramenter wich can be used with different types in the future.</typeparam>
+        </member>
+        <member name="M:PoliceApp.Repository.IRepository`1.Get(System.Int32)">
+            <summary>
+            Get function used to get a TEntity object of the same id as the parameter.
+            </summary>
+            <param name="id">Id of the desired element.</param>
+            <returns>TEntity object.</returns>
+        </member>
+        <member name="M:PoliceApp.Repository.IRepository`1.GetAll">
+            <summary>
+            GetAll function used to get a TEntity objects of a certain dataset.
+            </summary>
+            <returns>IQueryable objects of TEntity.</returns>
+        </member>
+        <member name="M:PoliceApp.Repository.IRepository`1.Find(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Find function used to get a TEntity object which satisfies the parameter predicate.
+            </summary>
+            <param name="predicate">Function or Lamda expression.</param>
+            <returns>TEntity object.</returns>
+        </member>
+        <member name="M:PoliceApp.Repository.IRepository`1.Add(`0)">
+            <summary>
+            Add function used to add a TEntity object.
+            </summary>
+            <param name="entity">Object to be added.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.IRepository`1.AddRange(System.Linq.IQueryable{`0})">
+            <summary>
+            AddRange function used to add a list of TEntity objects.
+            </summary>
+            <param name="entities">IQueryable objects of type TEntity.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.IRepository`1.Remove(`0)">
+            <summary>
+            Remove function used to remove an TEntity object.
+            </summary>
+            <param name="entity">Object to be removed.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.IRepository`1.Remove(System.Int32)">
+            <summary>
+            Remove function used to remove an object of the same id as the parameter.
+            </summary>
+            <param name="id">Id of desired element.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.IRepository`1.RemoveRange(System.Linq.IQueryable{`0})">
+            <summary>
+            RemoveRange function used to remove a list of TEntity objects.
+            </summary>
+            <param name="entities">IQueryable objects of type TEntity.</param>
+        </member>
+        <member name="T:PoliceApp.Repository.Repositories.CrimeRepository">
+            <summary>
+            CrimeRepositroy class.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.CrimeRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PoliceApp.Repository.Repositories.CrimeRepository"/> class.
+            </summary>
+            <param name="context">DbContext to deal with data.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.CrimeRepository.Get(System.Int32)">
+            <summary>
+            Implements the Get method.
+            </summary>
+            <param name="id">Id of the desired element.</param>
+            <returns>TEntity object.</returns>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.CrimeRepository.UpdateType(System.Int32,System.String)">
+            <summary>
+            Implements the update method.
+            </summary>
+            <param name="id">Id of the desired element.</param>
+            <param name="newType">Name of the Updated type.</param>
+        </member>
+        <member name="T:PoliceApp.Repository.Repositories.CriminalRepository">
+            <summary>
+            CriminalRepository class.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.CriminalRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PoliceApp.Repository.Repositories.CriminalRepository"/> class.
+            </summary>
+            <param name="context">DbContext to deal with data.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.CriminalRepository.Get(System.Int32)">
+            <summary>
+            Implements the Get method.
+            </summary>
+            <param name="id">Id of the desired element.</param>
+            <returns>TEntity object.</returns>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.CriminalRepository.UpdateName(System.Int32,System.String)">
+            <summary>
+            Implements the update method.
+            </summary>
+            <param name="id">Id of the desired element.</param>
+            <param name="newName">Name of the Updated name.</param>
+        </member>
+        <member name="T:PoliceApp.Repository.Repositories.PoliceRepository">
+            <summary>
+            PoliceRepository class.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.PoliceRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PoliceApp.Repository.Repositories.PoliceRepository"/> class.
+            </summary>
+            <param name="context">DbContext to deal with data.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.PoliceRepository.UpdateCity(System.Int32,System.String)">
+            <summary>
+            Implements the update method.
+            </summary>
+            <param name="id">Id of the record we want to update.</param>
+            <param name="newCity">Name of the Updated city.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.PoliceRepository.Get(System.Int32)">
+            <summary>
+            Implements the Get method.
+            </summary>
+            <param name="id">Id of the desired element.</param>
+            <returns>TEntity object.</returns>
+        </member>
+        <member name="T:PoliceApp.Repository.Repositories.StationRepository">
+            <summary>
+            StationRepository class.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.StationRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PoliceApp.Repository.Repositories.StationRepository"/> class.
+            </summary>
+            <param name="context">DbContext to deal with data.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.StationRepository.Get(System.Int32)">
+            <summary>
+            Implements the Get method.
+            </summary>
+            <param name="id">Id of the desired element.</param>
+            <returns>TEntity object.</returns>
+        </member>
+        <member name="M:PoliceApp.Repository.Repositories.StationRepository.UpdateName(System.Int32,System.String)">
+            <summary>
+            Implements the update method.
+            </summary>
+            <param name="id">Id of the desired element.</param>
+            <param name="newName">Name of the Updated name.</param>
+        </member>
+        <member name="T:PoliceApp.Repository.Repository`1">
+            <summary>
+            Abstract Repositroy class to implement the functions of the IRepository interface.
+            </summary>
+            <typeparam name="TEntity">TEntity parameter so it can be generic and not bount to one type.</typeparam>
+        </member>
+        <member name="F:PoliceApp.Repository.Repository`1.context">
+            <summary>
+            DbContext to deal with data.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Repository.Repository`1.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PoliceApp.Repository.Repository`1"/> class.
+            Constructor for the Repository class.
+            </summary>
+            <param name="context">DbContext to deal with data.</param>
+        </member>
+        <member name="P:PoliceApp.Repository.Repository`1.Context">
+            <summary>
+            Gets changes the DbContect to protected so all the desendant classes can use it.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Repository.Repository`1.Add(`0)">
+            <summary>
+            Implements the Add funtion.
+            </summary>
+            <param name="entity">TEntity parameter.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.Repository`1.AddRange(System.Linq.IQueryable{`0})">
+            <summary>
+            Implements AddRange funtion.
+            </summary>
+            <param name="entities">IQueryable list of TEntity objects.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.Repository`1.Find(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Implements the Find function.
+            </summary>
+            <param name="predicate">Function or Lamda expression.</param>
+            <returns>TEntity object.</returns>
+        </member>
+        <member name="M:PoliceApp.Repository.Repository`1.Get(System.Int32)">
+            <summary>
+            Implements the get method.
+            </summary>
+            <param name="id">Id of the desired element.</param>
+            <returns>TEntity object.</returns>
+        </member>
+        <member name="M:PoliceApp.Repository.Repository`1.GetAll">
+            <summary>
+            Implements the GetAll function.
+            </summary>
+            <returns>IQueryable list of objects of type TEntity.</returns>
+        </member>
+        <member name="M:PoliceApp.Repository.Repository`1.Remove(`0)">
+            <summary>
+            Implements the remove function.
+            </summary>
+            <param name="entity">Object to be removed.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.Repository`1.Remove(System.Int32)">
+            <summary>
+            Implements the remove function(Id).
+            </summary>
+            <param name="id">Id of desired element.</param>
+        </member>
+        <member name="M:PoliceApp.Repository.Repository`1.RemoveRange(System.Linq.IQueryable{`0})">
+            <summary>
+            Implements te RemoveRange function.
+            </summary>
+            <param name="entities">IQueryable list of objects of type TEntity.</param>
+        </member>
+    </members>
+</doc>

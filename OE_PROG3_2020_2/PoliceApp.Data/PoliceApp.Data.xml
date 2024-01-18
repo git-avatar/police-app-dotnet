@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PoliceApp.Data</name>
+    </assembly>
+    <members>
+        <member name="T:PoliceApp.Data.Crime">
+            <summary>
+            Class crime.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Crime.CrimeId">
+            <summary>
+            Gets or sets crimeId property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Crime.CrimeType">
+            <summary>
+            Gets or sets crimeType property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Crime.CrimeDate">
+            <summary>
+            Gets or sets crimeDate property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Crime.PoliceId">
+            <summary>
+            Gets or sets policeId property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Crime.CriminalId">
+            <summary>
+            Gets or sets criminalId property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Crime.Police">
+            <summary>
+            Gets or sets police virtual property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Crime.Criminal">
+            <summary>
+            Gets or sets criminal virtual property.
+            </summary>
+        </member>
+        <member name="T:PoliceApp.Data.Criminal">
+            <summary>
+            Criminal class.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Criminal.CriminalId">
+            <summary>
+            Gets or sets criminalId property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Criminal.CriminalName">
+            <summary>
+            Gets or sets criminalName property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Criminal.CriminalPhone">
+            <summary>
+            Gets or sets criminalPhone property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Criminal.CriminalCity">
+            <summary>
+            Gets or sets criminalCity property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Criminal.CriminalAddress">
+            <summary>
+            Gets or sets criminalAddress property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Criminal.CriminalDOB">
+            <summary>
+            Gets or sets criminalDOB property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Criminal.Crimes">
+            <summary>
+            Gets or sets crimes virtual property.
+            </summary>
+        </member>
+        <member name="T:PoliceApp.Data.Police">
+            <summary>
+            Class Police.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Police.PoliceId">
+            <summary>
+            Gets or sets policeId property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Police.PoliceName">
+            <summary>
+            Gets or sets policeName property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Police.PolicePhone">
+            <summary>
+            Gets or sets policePhone property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Police.PoliceCity">
+            <summary>
+            Gets or sets policeCity property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Police.PoliceAddress">
+            <summary>
+            Gets or sets policeAddress property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Police.PoliceDOB">
+            <summary>
+            Gets or sets policeDOB property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Police.StationId">
+            <summary>
+            Gets or sets stationId property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Police.Station">
+            <summary>
+            Gets or sets station virtual property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Police.Crimes">
+            <summary>
+            Gets or sets crimes virtual property.
+            </summary>
+        </member>
+        <member name="T:PoliceApp.Data.PoliceAppDbContext">
+            <summary>
+            PoliceAppDbContext class.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.PoliceAppDbContext.Stations">
+            <summary>
+            Gets or sets stations property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.PoliceAppDbContext.Polices">
+            <summary>
+            Gets or sets polices property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.PoliceAppDbContext.Criminals">
+            <summary>
+            Gets or sets criminals property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.PoliceAppDbContext.Crimes">
+            <summary>
+            Gets or sets crimes property.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Data.PoliceAppDbContext.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:PoliceApp.Data.PoliceAppDbContext"/> class.
+            PoliceAppDbContext constructor.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Data.PoliceAppDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            OnConfiguring method, connects to the database using the connection string.
+            </summary>
+            <param name="optionsBuilder">optionsBuilder parameter.</param>
+        </member>
+        <member name="M:PoliceApp.Data.PoliceAppDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            OnModelCreateing method, sets up the relations between the tables and fills them up.
+            </summary>
+            <param name="modelBuilder">modelBuilder parameter.</param>
+        </member>
+        <member name="T:PoliceApp.Data.Station">
+            <summary>
+            Station class.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Station.StationId">
+            <summary>
+            Gets or sets stationId property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Station.StationName">
+            <summary>
+            Gets or sets stationName property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Station.StationCity">
+            <summary>
+            Gets or sets stationCity property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Station.StationPhone">
+            <summary>
+            Gets or sets stationPhone property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Station.StationAddress">
+            <summary>
+            Gets or sets stationAddress property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Station.StationPostCode">
+            <summary>
+            Gets or sets stationPostalCode property.
+            </summary>
+        </member>
+        <member name="P:PoliceApp.Data.Station.GetPolice">
+            <summary>
+            Gets or sets getPolice virtual property.
+            </summary>
+        </member>
+        <member name="M:PoliceApp.Data.Station.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:PoliceApp.Data.Station"/> class.
+            Station consturctor.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,13 @@
+﻿@model PoliceApp.WEB.Models.StationListViewModel
+
+@{
+    ViewData["Title"] = "StationsIndex";
+}
+
+<h2>Stations Index</h2>
+
+<p style="color:red">@TempData["editResult"]</p>
+
+@await Html.PartialAsync("StationsEdit", Model.EditedStation)
+
+@await Html.PartialAsync("StationsList", Model.ListOfStations)

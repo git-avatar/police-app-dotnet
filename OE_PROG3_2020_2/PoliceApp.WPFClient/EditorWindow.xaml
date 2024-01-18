@@ -1,0 +1,26 @@
+﻿<Window x:Class="PoliceApp.WPFClient.EditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoliceApp.WPFClient"
+        mc:Ignorable="d"
+        Title="EditorWindow" Height="250" Width="400"
+        d:DataContext="{d:DesignInstance Type={x:Type local:StationVM}}">
+    <Grid>
+        <Label Content="Station name" HorizontalAlignment="Left" Margin="17,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Station city" HorizontalAlignment="Left" Margin="17,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="Station phone" HorizontalAlignment="Left" Margin="17,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="Station address" HorizontalAlignment="Left" Margin="17,102,0,0" VerticalAlignment="Top"/>
+        <Label Content="Station postal code" HorizontalAlignment="Left" Margin="17,130,0,0" VerticalAlignment="Top"/>
+
+        <TextBox Text="{Binding Path=StationName}" HorizontalAlignment="Left" Height="23" Margin="130,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <TextBox Text="{Binding Path=StationCity}" HorizontalAlignment="Left" Height="23" Margin="130,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <TextBox Text="{Binding Path=StationPhone}" HorizontalAlignment="Left" Height="23" Margin="130,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <TextBox Text="{Binding Path=StationAddress}" HorizontalAlignment="Left" Height="23" Margin="130,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <TextBox Text="{Binding Path=StationPostCode}" HorizontalAlignment="Left" Height="23" Margin="130,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+
+        <Button Content="OK" Click="OkClick" HorizontalAlignment="Left" Margin="17,180,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cancel" Click="CancelClick" HorizontalAlignment="Left" Margin="97,180,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
